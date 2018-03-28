@@ -1,0 +1,54 @@
+3 raw data files: They are the output of the C-script.
+
+1. aadata.rtd = data of Approach-Avoidance training task: 
+
+It contains 9 variables: 
+
+ppn 	(= participant number)					
+mv 	(= sex of participant)					: m = male, v = female
+trial 	(= triall number)
+blk 	(= block number)
+tfac 	(= type of face)					: 1 = approached face, 2 = avoided face)
+sze 	(= size of presentation of face stimulus)	
+face 	(= which specific face was used)			: 8 possible faces: 0=bmp001, ... 7 =bmp008
+rt 	(=reaction time)	
+re 	(= delay in presentation of face in microsecond due to processing of computer)
+
+2. explicitdata.rtd = data of explicit questions we asked participants: 
+
+It contains 81 variables: 
+
+pp 	(=participant number) 
+ca 	(= contingency instruction condition)			: 1 = with instructions, 0 = without instructions
+0nr 	(= for face bmp001: number in the experiment)		: 1-4 = approached, 5-8 = avoided
+0ty 	(= for face bmp001: what was the type)			: 1 = approached, 2 = avoided
+0ca 	(= for face bmp001: was participant aware of contingency between face and action?)	: 1 = yes, 0 =no
+0ra 	(= for face bmp001: what was liking rating)		: 1-7
+0vr 	(= for face bmp001: what was friendliness rating)	: 1-7
+0ac 	(= for face 1: what action did pp indicate) 		: 1 = approach, 2 = avoid, 3 = both actions equal)
+0ze 	(= for face 1: how certain was participant that he had performed that action) 
+0pct 	(= for face 1: what was percentage)
+--> the same variables for all faces: e.g. 3ra = for face bmp004: liking rating
+
+oft 	(= answer to question: do you think you performed all actions for each face equally often)
+w1 - 11	(= answers to 11 reactance scale questions)
+
+3. primedata.rtd = data of evaluative priming task: 
+
+It contains 14 variables: 
+
+ppn 	(= participant number)	
+mv 	(= sex of participant)					: m = male, v = female
+trial 	(= trial number)
+blk 	(= block number)
+hnd 	(= 1 or 2: counterbalancing of left/right button press to positive/negative target response) 
+tfac 	(= type of face: 1 = approached face, 2 = avoided fice)
+fac 	(= which specific face was used: 8 possible faces: 4 male, 4 female)
+prmt 	(= presentation time of prime)
+ttype 	(= targettype: 0 is negative target word, 1 is positive target word)
+xr 	(= correct response option)
+r 	(= given response)
+cor 	(= correctness of response)				: 0 or 1
+rt 	(= reaction time)					: in ms
+re 	(= delay in presentation of face)			: in microseconds
+target 	(= which specific word was used as target) 		: e.g., the dutch word 'vriendelijk' (friendly),
